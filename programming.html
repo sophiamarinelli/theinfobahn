@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Infobahn</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.marquee.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript" src="js/script.js"></script>
+    <div class="filter"></div>
+    <div class="playerContainer">
+        <iframe id="player" src="https://player.twitch.tv/?channel=theinfobahn" height="80%" width="100%" frameborder="<frameborder>" scrolling="<scrolling>" allowfullscreen="<allowfullscreen>">
+        </iframe>
+    </div>
+    <a href="index.html">
+        <div class="header">
+            <p class="inner inline">Welcome to The Infobahn. It is currently <span id="getTime"> </span> at The Infobahn.
+            </p>
+            <a href="about.html">
+                <div class="inline lozenge">About</div>
+            </a>
+            <a href="archive.html">
+                <div class="inline lozenge">Archive</div>
+            </a>
+            <a href="programming.html">
+                <div class="inline lozenge">Programming</div>
+            </a>
+            <a href="plan.html">
+                <div class="inline lozenge">Plan Your Visit</div>
+            </a>
+            <a href="https://www.eventbrite.com/o/the-infobahn-30060818992">
+                <div class="inline lozenge">Join</div>
+            </a>
+        </div>
+    </a>
+    <div class="wrapper">
+        <div class="pageTitle2">Programming</div>
+        <br>
+        <div class="sortMenu">
+            <div>Sort</div>
+            <div class="typeMenu">
+                <div class="box">Class</div>
+                <div class="box">Experience</div>
+                <div class="box">Performance</div>
+                <div class="box">Discussion</div>
+                <div class="box">Workshop</div>
+            </div>
+        </div>
+        <div class="programContainer">
+            <div class="classBlock types">
+                <div>Title</div>
+                <div>Type</div>
+                <div>Description</div>
+            </div>
+            <div class="classBlock class">
+                <div class="title">
+                    <div class="name">Checking in on Ourselves</div>
+                    <div class="">Spaces Available: 10
+                        <br>
+                        Run Time: 10 minutes</div>
+                </div>
+                <div class="info">
+                    <div class="box" id="class">Class</div>
+                </div>
+                <div>
+                    <div>Visitors of The Infobahn will participate in a 'body check-in,' a mindfulness technique designed to help participants tap into their body's emotional intelligence.</div>
+                    <br>
+                    <br>
+                    <div class="tag">Body-Mind</div>
+                    <div class="tag">Meditation</div>
+                    <div class="tag">Mindfulness</div>
+                </div>
+                <br>
+            </div>
+            <div class="classBlock performance">
+                <div class="title">
+                    <div class="name">Partner A Capella Karaoke</div>
+                    <div class="">Spaces Available: 10
+                        <br>
+                        Run Time: 20 minutes</div>
+                </div>
+                <div class="info">
+                    <div class="box">Performance</div>
+                </div>
+                <div class="description">
+                    <div>Visitors of The Infobahn pair up to recreate the musical stylings of their choice. One partner acts as the accompaniment and instrumentals, while the other handles the vocals. </div>
+                    <br>
+                    <br>
+                    <div class="tag">Singing</div>
+                    <div class="tag">Karaoke</div>
+                    <div class="tag">Music</div>
+                </div>
+                <br>
+            </div>
+            <div class="classBlock performance">
+                <div class="title">
+                    <div class="name">30 Second Plays</div>
+                    <div class="">Spaces Available: 10
+                        <br>
+                        Run Time: 20 minutes</div>
+                </div>
+                <div class="info">
+                    <div class="box">Performance</div>
+                </div>
+                <div class="description">
+                    <div>Visitors of The Infobahn perform 30 second long plays of their own creation.
+                        <br>
+                        <br>
+                        *Prompts available by request </div>
+                    <br>
+                    <br>
+                    <div class="tag">Theater</div>
+                    <div class="tag">Group Collaboration</div>
+                    <div class="tag">Playwriting</div>
+                </div>
+                <br>
+            </div>
+            <div class="classBlock experience">
+                <div class="title">
+                    <div class="name">Cloud Watching</div>
+                    <div class="">Spaces Available: 20
+                        <br>
+                        Run Time: 30 minutes</div>
+                </div>
+                <div class="info">
+                    <div class="box">Experience</div>
+                </div>
+                <div class="description">
+                    <div>Visitors of The Infobahn will report on what they see in the sky.</div>
+                    <br>
+                    <br>
+                    <div class="tag">Outdoors</div>
+                    <div class="tag">Creativity</div>
+                    <div class="tag">Mindfulness</div>
+                </div>
+                <br>
+            </div>
+            <div class="classBlock workshop">
+                <div class="title">
+                    <div class="name">Non-Dominant Body Appendage</div>
+                    <div class="">Spaces Available: 5
+                        <br>
+                        Run Time: 30 minutes</div>
+                </div>
+                <div class="info">
+                    <div class="box">Workshop</div>
+                </div>
+                <div class="description">
+                    <div>Visitors will use alternative appendages to write stories.</div>
+                    <br>
+                    <br>
+                    <div class="tag">Writing</div>
+                    <div class="tag">Creativity</div>
+                    <div class="tag">Expression</div>
+                </div>
+                <br>
+            </div>
+            <div class="classBlock discussion">
+                <div class="title">
+                    <div class="name">The Most Important Meal of the Day!</div>
+                    <div class="">Spaces Available: 8
+                        <br>
+                        Run Time: 30 minutes</div>
+                </div>
+                <div class="info">
+                    <div class="box">Discussion</div>
+                </div>
+                <div class="description">
+                    <div>Visitors will make/eat breakfast together.</div>
+                    <br>
+                    <br>
+                    <div class="tag">Socializing</div>
+                    <div class="tag">Cooking</div>
+                    <div class="tag">Eating</div>
+                </div>
+                <br>
+            </div>
+            <div class="classBlock class">
+                <div class="title">
+                    <div class="name">Design a Salad</div>
+                    <div class="">Spaces Available: 8
+                        <br>
+                        Run Time: 30 minutes</div>
+                </div>
+                <div class="info">
+                    <div class="box">Class</div>
+                </div>
+                <div class="description">
+                    <div>Visitors will learn how to prepare delicious salads. </div>
+                    <br>
+                    <br>
+                    <div class="tag">Tutorial</div>
+                    <div class="tag">Cooking</div>
+                    <div class="tag">Recipes</div>
+                </div>
+                <br>
+            </div>
+            <div class="classBlock discussion">
+                <div class="title">
+                    <div class="name">Book Club</div>
+                    <div class="">Spaces Available: 7
+                        <br>
+                        Run Time: 30 minutes</div>
+                </div>
+                <div class="info">
+                    <div class="box">Discussion</div>
+                </div>
+                <div class="description">
+                    <div>One visitor will share a short passage and the group will discuss.</div>
+                    <br>
+                    <br>
+                    <div class="tag">Books</div>
+                    <div class="tag">Reading</div>
+                    <div class="tag">Thought</div>
+                </div>
+                <br>
+            </div>
+            <div class="classBlock discussion">
+                <div class="title">
+                    <div class="name">Rose & Thorn</div>
+                    <div class="">Spaces Available: 7
+                        <br>
+                        Run Time: 30 minutes</div>
+                </div>
+                <div class="info">
+                    <div class="box">Discussion</div>
+                </div>
+                <div class="description">
+                    <div>Visitors of The Infobahn will each share one good thing and one bad thing about their day so far. </div>
+                    <br>
+                    <br>
+                    <div class="tag">Friendship</div>
+                    <div class="tag">Support</div>
+                    <div class="tag">Socializing</div>
+                </div>
+                <br>
+            </div>
+            <div class="classBlock experience">
+                <div class="title">
+                    <div class="name">Ecstatic Dance</div>
+                    <div class="">Spaces Available: 10
+                        <br>
+                        Run Time: 20 minutes</div>
+                </div>
+                <div class="info">
+                    <div class="box">Experience</div>
+                </div>
+                <div class="description">
+                    <div>Visitors will participate in ectastic dance: a form of therapeutic movement that releases tension. </div>
+                    <br>
+                    <br>
+                    <div class="tag">Dance</div>
+                    <div class="tag">Body-Mind</div>
+                    <div class="tag">Mindfulness</div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
