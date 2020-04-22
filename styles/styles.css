@@ -388,7 +388,7 @@
         margin: 0;
         font-family: 'space_groteskregular';
         font-size: 1em;
-        color: white;
+        color: black;
     }
 
     a {
@@ -407,7 +407,7 @@
     }
 
 
-    .filter {
+    /*    .filter {
         position: fixed;
         top: 0;
         left: 0;
@@ -419,7 +419,7 @@
         background: linear-gradient(90deg, #b5b20e, #095A55, #D861A4, #141B0F, #5300D4, #3F044F, #858AF1, #AEA301, #55AF8C, #D4E3D8, #AE01A8, #44FF00, #750057, #016BAE);
         background-size: 900% 900%;
         animation: gradient 200s ease infinite;
-    }
+    }*/
 
     @keyframes gradient {
         0% {
