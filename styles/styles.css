@@ -66,6 +66,7 @@
         margin: 0;
         font-family: 'space_groteskregular';
         font-size: 1em;
+        color: white;
     }
 
     a {
@@ -396,12 +397,10 @@
 
     a:visited {
         text-decoration: none;
-        color: white;
     }
 
     a:hover {
         text-decoration: none;
-        color: white;
     }
 
 
@@ -465,7 +464,6 @@
         position: absolute;
         margin-left: 2%;
         width: 46%;
-        z-index: -1;
         display: none;
     }
 
@@ -478,7 +476,6 @@
         position: absolute;
         margin-left: 2%;
         width: 46%;
-        z-index: -1;
     }
 
     .happeningInfo {
@@ -515,7 +512,7 @@
         padding-top: 5px;
         padding-bottom: 5px;
         width: auto;
-        border: 1px solid white;
+        border: 1px solid black;
     }
 
     .happeningBox:hover {
@@ -555,7 +552,7 @@
         margin-top: 10px;
         margin-bottom: 10px;
         padding-top: 10px;
-        border-top: 1px solid white;
+        border-top: 1px solid black;
     }
 
     .types {
@@ -587,7 +584,7 @@
         margin-top: 2px;
         width: auto;
         border-radius: 25px;
-        border: 1px solid white;
+        border: 1px solid black;
     }
 
     .lozenge:hover {
@@ -607,7 +604,7 @@
         margin-left: 1px;
         margin-right: 1px;
         margin-bottom: 5px;
-        border: 1px solid white;
+        border: 1px solid black;
     }
 
     .tag {
@@ -620,7 +617,7 @@
         margin-bottom: 4px;
         width: auto;
         border-radius: 25px;
-        border: 1px solid white;
+        border: 1px solid black;
     }
 
     .box:hover {
@@ -645,7 +642,7 @@
         margin-top: 10px;
         margin-bottom: 10px;
         padding-top: 10px;
-        border-top: 1px solid white;
+        border-top: 1px solid black;
         display: grid;
     }
 
@@ -692,7 +689,7 @@
         margin-top: 10px;
         margin-bottom: 10px;
         padding-top: 10px;
-        border-top: 1px solid white;
+        border-top: 1px solid black;
     }
 
     .pageTitleAbout {
