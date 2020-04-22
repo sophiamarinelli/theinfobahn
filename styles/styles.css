@@ -92,6 +92,7 @@
         width: 100%;
         height: 600vh;
         pointer-events: none;
+        -webkit-mix-blend-mode: lighten;
         mix-blend-mode: lighten;
         background: linear-gradient(90deg, #b5b20e, #095A55, #D861A4, #141B0F, #5300D4, #3F044F, #858AF1, #AEA301, #55AF8C, #D4E3D8, #AE01A8, #44FF00, #750057, #016BAE);
         background-size: 900% 900%;
@@ -413,6 +414,7 @@
         width: 100%;
         height: 600vh;
         pointer-events: none;
+        -webkit-mix-blend-mode: lighten;
         mix-blend-mode: lighten;
         background: linear-gradient(90deg, #b5b20e, #095A55, #D861A4, #141B0F, #5300D4, #3F044F, #858AF1, #AEA301, #55AF8C, #D4E3D8, #AE01A8, #44FF00, #750057, #016BAE);
         background-size: 900% 900%;
