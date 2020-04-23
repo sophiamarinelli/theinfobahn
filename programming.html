@@ -15,14 +15,8 @@
 <body>
     <script type="text/javascript" src="js/script.js"></script>
     <div class="filter"></div>
-    <div class="playerContainer">
-        <iframe id="player" src="https://player.twitch.tv/?channel=theinfobahn" height="80%" width="100%" frameborder="<frameborder>" scrolling="<scrolling>" allowfullscreen="<allowfullscreen>">
-        </iframe>
-    </div>
     <a href="index.html">
         <div class="header">
-            <p class="inner inline">Welcome to The Infobahn. It is currently <span id="getTime"> </span> at The Infobahn.
-            </p>
             <a href="about.html">
                 <div class="inline lozenge">About</div>
             </a>
@@ -38,8 +32,16 @@
             <a href="https://www.eventbrite.com/o/the-infobahn-30060818992">
                 <div class="inline lozenge">Join</div>
             </a>
+            <a href="index.html">
+                <p class="inline" id="flash1">It is currently <span id="getTime"> </span> at The Infobahn.</p>
+            </a>
+            <div class="inline lozenge" id="watchButton">i</div>
         </div>
     </a>
+    <div class="playerContainer">
+        <iframe id="player" src="https://player.twitch.tv/?channel=theinfobahn" height="80%" width="100%" frameborder="<frameborder>" scrolling="<scrolling>" allowfullscreen="<allowfullscreen>">
+        </iframe>
+    </div>
     <div class="wrapper">
         <div class="pageTitle2">Programming</div>
         <br>
@@ -70,7 +72,7 @@
                     <div class="box" id="class">Class</div>
                 </div>
                 <div>
-                    <div>Visitors of The Infobahn will participate in a 'body check-in,' a mindfulness technique designed to help participants tap into their body's emotional intelligence.</div>
+                    <div class="description">Visitors of The Infobahn will participate in a 'body check-in,' a mindfulness technique designed to help participants tap into their body's emotional intelligence.</div>
                     <br>
                     <br>
                     <div class="tag">Body-Mind</div>
@@ -264,6 +266,7 @@
             </div>
         </div>
     </div>
+    <div class="footer">The Infobahn © 2020</div>
     <script type="text/javascript" src="script.js"></script>
 </body>
 

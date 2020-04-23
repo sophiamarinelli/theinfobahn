@@ -17,16 +17,87 @@ setInterval(function() {
     // console.log('hello');
 }, 1);
 
-//front page show/hide event
-$(function() {
-    $('.wrapper').hover(function() {
-        $('.happeningContainerDescription').show();
-        $('.happeningContainer').hide();
-    }, function() {
-        $('.happeningContainerDescription').hide();
-        $('.happeningContainer').show();
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+
+}
+
+
+$(window).on('load', function() {
+    let gradient = [];
+    for (var i = 0; i < 10; i++) {
+        var value = getRandomColor();
+        gradient.push(value);
+        console.log(gradient[0])
+    }
+    console.log('blue')
+
+    // $('.filter').css('background', `linear-gradient(90deg, ${gradient[0]}, ${gradient[1]}, ${gradient[2]}, ${gradient[3]}, ${gradient[4]}, ${gradient[5]}, ${gradient[6]}, ${gradient[7]}, ${gradient[8]}, ${gradient[9]})`);
+    $('.filter').css({
+        'background': `linear-gradient(90deg, ${gradient[0]}, ${gradient[1]}, ${gradient[2]}, ${gradient[3]}, ${gradient[4]}, ${gradient[5]}, ${gradient[6]}, ${gradient[7]}, ${gradient[8]}, ${gradient[9]})`,
+        'background-size': '200%, 200%'
     });
+
+
+    $('.lozenge').hover(function() {
+        $(this).css({ 'color': `${gradient[3]}` })
+    }).mouseleave(function() {
+        $(this).css({ 'color': 'white' })
+    });
+
+    $('.tag').hover(function() {
+        $(this).css({ 'color': `${gradient[3]}` })
+    }).mouseleave(function() {
+        $(this).css({ 'color': 'white' })
+    });
+
+    $('.box').hover(function() {
+        $(this).css({ 'color': `${gradient[3]}` })
+    }).mouseleave(function() {
+        $(this).css({ 'color': 'white' })
+    });
+
+    $('#watchButton').on('click', function() {
+        $('.playerContainer').toggle();
+    });
+
+    var currentDiv = $("#a");
+    var nextDiv, count = 1;
+    var myInterval = setInterval(function() {
+        if (count == 3) {
+            currentDiv.fadeOut(300);
+            currentDiv = $("#a");
+            currentDiv.delay(500).fadeIn(300);
+            count = 1;
+        } else {
+            count++;
+            currentDiv.fadeOut(300);
+            currentDiv = currentDiv.next();
+            currentDiv.delay(500).fadeIn(300);
+        }
+    }, 6000);
+
 });
+
+
+
+
+
+//front page show/hide event
+// $(function() {
+//     $('.wrapper').hover(function() {
+//         $('.happeningContainerDescription').show();
+//         $('.happeningContainer').hide();
+//     }, function() {
+//         $('.happeningContainerDescription').hide();
+//         $('.happeningContainer').show();
+//     });
+// });
 
 //sort function 
 
