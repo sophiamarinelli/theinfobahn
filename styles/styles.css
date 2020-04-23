@@ -454,6 +454,10 @@
 
     }
 
+    #watchButton {
+        display: none;
+    }
+
     .inline {
         display: block;
         width: 96%;
@@ -704,5 +708,6 @@
     .pageTitleAbout {
         font-size: 3.5em;
     }
+
 
 }
